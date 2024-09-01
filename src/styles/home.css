@@ -34,6 +34,10 @@
     #site-home #first-edition-title {
         font-size: 8em;
     }
+
+    #site-home #articles-list {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 740px) {
@@ -94,4 +98,21 @@
 
 #site-home #ascii-art {
     margin-top: calc(var(--cover-padding-increment) + 1rem);
+}
+
+#site-home #articles-list {
+    font-family: "Times New Roman", serif;
+    font-size: 1.5rem;
+}
+
+#site-home #articles-list p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+#site-home #articles-list p:hover {
+    margin-left: 10px;
 }
