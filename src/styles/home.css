@@ -34,10 +34,6 @@
     #site-home #first-edition-title {
         font-size: 8em;
     }
-
-    #site-home #articles-list {
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 740px) {
@@ -68,6 +64,14 @@
     #site-home {
         padding: 40px;
     }
+
+    #site-home #articles-list p {
+        font-size: 1.4rem;
+    }
+
+    #site-home #ascii-art {
+        margin-top: calc(var(--cover-padding-increment)) !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -77,6 +81,11 @@
 
     #site-home #first-edition-title {
         font-size: 12vw;
+    }
+
+    #site-home #articles-list p {
+        font-size: 1rem;
+        margin-top: 0.5rem !important;
     }
 }
 
@@ -110,7 +119,7 @@
     margin-bottom: 0;
     cursor: pointer;
     transition: 0.5s;
-    display: inline-block;
+    width: max-content;
 }
 
 #site-home #articles-list p:hover {

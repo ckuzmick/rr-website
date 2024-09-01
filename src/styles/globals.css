@@ -24,7 +24,7 @@ body {
   max-width: 800px;
   box-sizing: border-box;
   background-color: var(--color-background);
-  overscroll-behavior-y: none;
+  overscroll-behavior: none;
 }
 
 h1 {
