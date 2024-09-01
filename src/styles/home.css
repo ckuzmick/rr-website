@@ -30,6 +30,52 @@
     margin-top: var(--cover-padding-increment);
 }
 
+@media screen and (max-width: 1000px) {
+    #site-home #first-edition-title {
+        font-size: 8em;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #site-home #first-edition-title {
+        font-size: 6em;
+    }
+
+    #site-home #first-edition-subtitle {
+        font-size: 1.5em;
+    }
+
+    :root {
+        --cover-padding-increment: 2rem;
+        --title-side-padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #site-home #first-edition-title {
+        font-size: 4em;
+    }
+
+    :root {
+        --cover-padding-increment: 1rem;
+        --title-side-padding: 1rem;
+    }
+    
+    #site-home {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #site-home #first-edition-subtitle {
+        font-size: 5.8vw;
+    }
+
+    #site-home #first-edition-title {
+        font-size: 12vw;
+    }
+}
+
 #site-home #first-edition-subtitle {
     text-align: center;
     place-self: center;
