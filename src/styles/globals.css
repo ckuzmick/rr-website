@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-background: #fff;
+  --color-text: #000;
+
+  --font-family-header: 'Helvetica Neue', sans-serif;
+  --font-family-text: 'Times New Roman', serif;
+  --font-weight-header: 700;
+  --font-weight-text: 400;
+
+  --cover-padding-increment: 2rem;
+  --title-side-padding: 6rem;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-family: var(--font-family-header);
+  font-weight: var(--font-weight-header);
+  color: var(--color-text);
+}
