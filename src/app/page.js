@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Page({ asciiText }) {
   return (
     <div id="site-home">
-      <h1 id="first-edition-subtitle">CRLS Free Thinkers Journal</h1>
+      <h1 id="first-edition-subtitle">Rindge Radical</h1>
       <div id="divider" />
       <h1 id="first-edition-title">The First Edition</h1>
       <Image src="/ascii-art/cover-1.svg" alt="First Edition" width={0}

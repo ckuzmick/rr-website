@@ -98,7 +98,7 @@
 #site-home #divider {
     content: '';
     display: block;
-    width: 50%;
+    width: 20%;
     height: 1px;
     background-color: var(--color-secondary);
     margin: auto;
