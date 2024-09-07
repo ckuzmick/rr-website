@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.rindgeradical.org
+
+# Sitemaps
+Sitemap: https://www.rindgeradical.org/sitemap.xml
