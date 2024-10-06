@@ -4,8 +4,6 @@ import Head from "next/head";
 import Airtable from "airtable";
 import { unstable_cache } from "next/cache";
 
-console.log("Fetching articles from Airtable...");
-
 export default async function Page() {
   const getArticles = unstable_cache(
     async () => {
