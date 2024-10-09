@@ -105,23 +105,21 @@
     margin-top: var(--cover-padding-increment) !important;
 }
 
-#site-home #ascii-art {
-    margin-top: calc(var(--cover-padding-increment) + 1rem);
+#site-home #cover {
+    width: 100vw !important;
+    align-self: center;
 }
 
 #site-home #articles-list {
     font-family: "Times New Roman", serif;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
 }
 
 #site-home #articles-list p {
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin: 0;
     cursor: pointer;
     transition: 0.5s;
-    width: max-content;
-}
-
-#site-home #articles-list p:hover {
-    margin-left: 10px;
 }

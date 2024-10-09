@@ -1,7 +1,7 @@
 import Airtable from "airtable";
 import { unstable_cache } from "next/cache";
 
-export const getArticles = unstable_cache(
+export const getCover = unstable_cache(
     async () => {
         const pat = process.env.AIRTABLE_PAT;
 
@@ -15,18 +15,16 @@ export const getArticles = unstable_cache(
         }).base("apps9tfZIeTLLz1nL");
 
         // Use async/await to fetch the records
-        const records = await base("articles")
+        const records = await base("editions")
             .select({
                 view: "Grid view",
             })
             .all();
 
-        const articles = records.map((record) => ({
-            title: record.get("title"),
-        }));
+        const cover = records[0].fields.cover[0].url;
 
-        return articles;
+        return cover;
     },
-    ["articles"],
-    { revalidate: 3600, tags: ["articles"] }
+    ["cover"],
+    { revalidate: 3600, tags: ["cover"] }
 );
