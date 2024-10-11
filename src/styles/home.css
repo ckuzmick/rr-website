@@ -1,3 +1,8 @@
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
 #site-home {
     display: flex;
     flex-direction: column;
@@ -109,6 +114,8 @@
     width: 100vw !important;
     align-self: center;
 }
+
+
 
 #site-home #articles-list {
     font-family: "Times New Roman", serif;
