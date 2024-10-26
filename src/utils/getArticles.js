@@ -1,5 +1,4 @@
 import Airtable from "airtable";
-import { image } from "d3";
 import { unstable_cache } from "next/cache";
 
 export const getArticles = unstable_cache(
