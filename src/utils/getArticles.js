@@ -1,4 +1,5 @@
 import Airtable from "airtable";
+import { image } from "d3";
 import { unstable_cache } from "next/cache";
 
 export const getArticles = unstable_cache(
@@ -23,6 +24,8 @@ export const getArticles = unstable_cache(
 
         const articles = records.map((record) => ({
             title: record.get("title"),
+            slug: record.get("slug"),
+            content: record.get("content"),
         }));
 
         return articles;

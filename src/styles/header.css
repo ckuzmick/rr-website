@@ -1,0 +1,38 @@
+header {
+    width: 100vw;
+    /* text-align: center; */
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    height: 3;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+header img {
+    margin: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px;
+    line-height: 0.9;
+}
+
+header div a {
+    text-decoration: none;
+    color: black;
+}

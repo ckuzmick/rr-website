@@ -25,10 +25,24 @@ body {
   box-sizing: border-box;
   background-color: var(--color-background);
   overscroll-behavior: none;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   font-family: var(--font-family-header);
   font-weight: var(--font-weight-header);
   color: var(--color-text);
+}
+
+.coming-soon {
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-text);
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 100vh;
+  margin: 0;
 }

@@ -120,13 +120,19 @@ html {
 #site-home #articles-list {
     font-family: "Times New Roman", serif;
     font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
     margin-top: 2em;
+    text-align: center;
+    line-height: 2;
 }
 
-#site-home #articles-list p {
+#site-home #articles-list a {
     margin: 0;
     cursor: pointer;
     transition: 0.5s;
+    color: black;
+    text-decoration: none;
+}
+
+#site-home #articles-list a:hover {
+    padding-left: 1em;
 }
