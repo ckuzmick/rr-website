@@ -11,7 +11,7 @@ export default async function WritingPage() {
             <div id="articles-list">
             {articles.map((article, index) => (
                 article.content ? (
-                        <a className="article-card" href={`/writing/${article.slug}`}>
+                        <a key={index} className="article-card" href={`/writing/${article.slug}`}>
                             <Image
                                 src={article.cover}
                                 alt="Cover Photo"
