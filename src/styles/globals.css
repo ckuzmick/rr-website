@@ -21,8 +21,9 @@
 
 body {
   margin: 0 auto;
-  margin-top: 2rem;
+  padding-top: 2rem;
   max-width: 900px;
+  min-height: 100vh;
   box-sizing: border-box;
   background-color: var(--color-background);
   overscroll-behavior: none;
@@ -44,7 +45,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 
