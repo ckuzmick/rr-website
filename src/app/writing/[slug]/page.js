@@ -35,7 +35,7 @@ export default async function ArticlePage({ params }) {
             />
             <div className="markdown-content">
                 {article.content.split("\n").map((paragraph, index) => (
-                    <ReactMarkdown components={{ a: LinkRenderer}}>{paragraph}</ReactMarkdown>
+                    <ReactMarkdown key={index} components={{ a: LinkRenderer}}>{paragraph}</ReactMarkdown>
                 ))}
             </div>
         </article>
