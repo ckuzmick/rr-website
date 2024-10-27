@@ -1,4 +1,15 @@
 import { getArticles } from "@/utils/getArticles";
+import Image from "next/image";
+import "@/styles/article.css";
+import ReactMarkdown from "react-markdown";
+
+function LinkRenderer(props) {
+    return (
+      <a href={props.href} target="_blank" rel="noreferrer">
+        {props.children}
+      </a>
+    );
+  }
 
 export default async function ArticlePage({ params }) {
     const articles = await getArticles();
@@ -10,8 +21,23 @@ export default async function ArticlePage({ params }) {
 
     return (
         <article>
-            <h1>{article.title}</h1>
-            <p>{article.content}</p>
+            <div id="title-block">
+                <h1>{article.title}</h1>
+                <h2>By {article.writer}</h2>
+            </div>
+            <Image
+                src={article.cover}
+                alt="Cover Photo"
+                width={600}
+                height={400}
+                loading="eager"
+                priority
+            />
+            <div className="markdown-content">
+                {article.content.split("\n").map((paragraph, index) => (
+                    <ReactMarkdown components={{ a: LinkRenderer}}>{paragraph}</ReactMarkdown>
+                ))}
+            </div>
         </article>
     );
 }

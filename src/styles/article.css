@@ -1,0 +1,57 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem;
+}
+
+article h1 {
+  font-family: var(--font-family-header);
+  font-weight: var(--font-weight-header);
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-text);
+  width: 100vw;
+  padding: 0 4rem;
+  margin: 0;
+}
+
+article img {
+    width: calc(100% + 2rem);
+    height: auto;
+    margin: 2rem;
+}
+
+article h2 {
+    font-family: var(--font-family-header);
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+article p {
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+article #title-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.markdown-content h2 {
+    font-family: var(--font-family-header);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: left;
+    color: var(--color-text);
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}

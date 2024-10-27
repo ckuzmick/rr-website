@@ -26,13 +26,13 @@ html {
 
 #site-home #first-edition-title {
     font-size: 16em;
+    letter-spacing: 0rem;
     line-height: 1;
     width: calc(100vw - (var(--title-side-padding) * 2));
     padding: 0 var(--title-side-padding);    
     text-align: center;
     place-self: center;
     margin-bottom: 0em;
-    margin-top: var(--cover-padding-increment);
 }
 
 @media screen and (max-width: 1000px) {
@@ -139,18 +139,29 @@ html {
 
 #site-home #read-button {
     margin-top: 2em;
-    margin-bottom: -4em;
+    /* margin-bottom: -4em; */
     text-align: center;
     /* animation: identifier 0.5s forwards; */
     /* transform: translateY(200px); */
     animation-delay: 2s;
     z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
 #site-home #read-button h2 {
     margin: 0;
     font-size: 2em;
     font-weight: 400;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    background-color: black;
+    padding: 0.1em 0.2em;
+}
+
+#site-home #read-button a {
+    text-decoration: none;
 }
 
 @keyframes identifier {

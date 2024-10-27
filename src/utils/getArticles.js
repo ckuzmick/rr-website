@@ -23,9 +23,15 @@ export const getArticles = unstable_cache(
 
         const articles = records.map((record) => ({
             title: record.get("title"),
+            date: record.get("date"),
+            writer: record.get("writerName"),
             slug: record.get("slug"),
             content: record.get("content"),
+            edition: record.get("editionNumber"),
+            cover: record.get("image") ? record.get("image")[0].url : null,
         }));
+
+        console.log(articles);
 
         return articles;
     },

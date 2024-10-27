@@ -2,7 +2,6 @@ import "@/styles/home.css";
 import Image from "next/image";
 import Head from "next/head";
 import { getArticles } from "@/utils/getArticles";
-import { getCover } from "@/utils/getCover";
 
 export default async function Page() {
   const articles = await getArticles();
@@ -19,12 +18,7 @@ export default async function Page() {
         <div id="divider" /> */}
         <h1 id="first-edition-title">THE FIRST EDITION</h1>
         <div id="read-button">
-          {/* {articles.map((article, index) => (
-            <div className="article" key={index}>
-              <a className="article-title" href={`/writing/${article.slug}`}>{article.title}</a>
-            </div>
-          ))} */}
-          <a href="/writing"><h2>READ NOW</h2></a>
+            <a href="/writing"><h2>READ NOW</h2></a>
         </div>
         <Image
           src="/cover-1.png"
@@ -41,3 +35,5 @@ export default async function Page() {
     </>
   );
 }
+
+export const revalidate = 14400;
