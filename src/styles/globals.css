@@ -10,9 +10,9 @@
   --color-background: #fff;
   --color-text: #000;
 
-  --font-family-header: 'Helvetica Neue', sans-serif;
+  --font-family-header: '__Gabarito_59a5c9','Helvetica Neue', sans-serif;
   --font-family-text: 'Times New Roman', serif;
-  --font-weight-header: 700;
+  --font-weight-header: 400;
   --font-weight-text: 400;
 
   --cover-padding-increment: 2rem;
@@ -33,6 +33,7 @@ h1 {
   font-family: var(--font-family-header);
   font-weight: var(--font-weight-header);
   color: var(--color-text);
+  letter-spacing: -0.4rem;
 }
 
 .coming-soon {

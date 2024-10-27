@@ -25,7 +25,7 @@ html {
 }
 
 #site-home #first-edition-title {
-    font-size: 12em;
+    font-size: 16em;
     line-height: 1;
     width: calc(100vw - (var(--title-side-padding) * 2));
     padding: 0 var(--title-side-padding);    
@@ -135,4 +135,29 @@ html {
 
 #site-home #articles-list a:hover {
     padding-left: 1em;
+}
+
+#site-home #read-button {
+    margin-top: 2em;
+    margin-bottom: -4em;
+    text-align: center;
+    /* animation: identifier 0.5s forwards; */
+    /* transform: translateY(200px); */
+    animation-delay: 2s;
+    z-index: 1;
+}
+
+#site-home #read-button h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+@keyframes identifier {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

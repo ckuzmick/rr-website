@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Gabarito } from "next/font/google";
 import "@/styles/globals.css";
 import Head from 'next/head';
 import Header from "@/components/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const gabarito = Gabarito({ subsets: ["latin"] });
 
 export const metadata = {
   title: "The Rindge Radical",
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           `}
         </style>
       </Head>
-      <body className={inter.className}>
+      <body className={gabarito.className}>
         {/* <Header /> */}
         {children}
       </body>
