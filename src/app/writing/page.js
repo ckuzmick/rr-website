@@ -6,7 +6,7 @@ export default async function WritingPage() {
     const articles = await getArticles();
 
     return (
-        <div>
+        <div id="menu-container">
             <h1>Writing</h1>
             <div id="articles-list">
             {articles.map((article, index) => (

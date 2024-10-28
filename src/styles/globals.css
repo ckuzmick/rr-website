@@ -19,9 +19,15 @@
   --title-side-padding: 6rem;
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
-  margin: 0 auto;
-  padding-top: 2rem;
+  margin: 0 2rem;
+  padding: 2rem 0;
   max-width: 900px;
   min-height: 100vh;
   box-sizing: border-box;

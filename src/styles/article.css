@@ -12,8 +12,8 @@ article h1 {
   font-size: 4rem;
   text-align: center;
   color: var(--color-text);
-  width: 100vw;
-  padding: 0 4rem;
+  max-width: max-content;
+  padding: 0 2rem;
   margin: 0;
 }
 
@@ -54,4 +54,66 @@ article #title-block {
     color: var(--color-text);
     margin-bottom: 0.75rem;
     margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        margin: 0;
+    }
+
+    article h1 {
+        font-size: 3rem;
+        padding: 0 2rem;
+        width: fit-content;
+    }
+
+    article img {
+        width: 100vw;
+        margin: 2rem 0;
+    }
+
+    article h2 {
+        font-size: 1rem;
+    }
+
+    article p {
+        font-size: 1.25rem;
+    }
+
+    .markdown-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .markdown-content {
+        margin: 0 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    article h1 {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    article img {
+        width: 100vw;
+        margin: 2rem 0;
+    }
+
+    article h2 {
+        font-size: 1rem;
+    }
+
+    article p {
+        font-size: 1.25rem;
+    }
+
+    .markdown-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .markdown-content {
+        margin: 0 1rem 1rem 1rem;
+    }
+    
 }

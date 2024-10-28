@@ -14,23 +14,11 @@ export default async function Page() {
         <meta name="keywords" content="crls, news, register, forum" />
       </Head>
       <div id="site-home">
-        {/* <h1 id="first-edition-subtitle">Rindge Radical</h1>
-        <div id="divider" /> */}
-        <h1 id="first-edition-title">THE FIRST EDITION</h1>
+        {/* <h2>RINDGE RADICAL:</h2> */}
+        <h1>THE FIRST EDITION</h1>
         <div id="read-button">
             <a href="/writing"><h2>READ NOW</h2></a>
         </div>
-        <Image
-          src="/cover-1.png"
-          alt="Cover Photo: CRLS Exterior"
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
-          id="cover"
-          loading="eager"
-          priority
-        />
       </div>
     </>
   );

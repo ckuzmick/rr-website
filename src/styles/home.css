@@ -12,137 +12,29 @@ html {
 }
 
 #site-home h1 {
-    font-size: 2em;
-    margin: 0;
-    margin-bottom: 2em;
-}
-
-#site-home ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-}
-
-#site-home #first-edition-title {
     font-size: 16em;
     letter-spacing: 0rem;
     line-height: 1;
-    width: calc(100vw - (var(--title-side-padding) * 2));
+    min-width: calc(100vw - (var(--title-side-padding) * 2));
     padding: 0 var(--title-side-padding);    
     text-align: center;
     place-self: center;
-    margin-bottom: 0em;
-}
-
-@media screen and (max-width: 1000px) {
-    #site-home #first-edition-title {
-        font-size: 8em;
-    }
-}
-
-@media screen and (max-width: 740px) {
-    #site-home #first-edition-title {
-        font-size: 6em;
-    }
-
-    #site-home #first-edition-subtitle {
-        font-size: 1.5em;
-    }
-
-    :root {
-        --cover-padding-increment: 2rem;
-        --title-side-padding: 2rem;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    #site-home #first-edition-title {
-        font-size: 4em;
-    }
-
-    :root {
-        --cover-padding-increment: 1rem;
-        --title-side-padding: 1rem;
-    }
-    
-    #site-home {
-        padding: 40px;
-    }
-
-    #site-home #articles-list p {
-        font-size: 1.4rem;
-    }
-
-    #site-home #ascii-art {
-        margin-top: calc(var(--cover-padding-increment)) !important;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #site-home #first-edition-subtitle {
-        font-size: 5.8vw;
-    }
-
-    #site-home #first-edition-title {
-        font-size: 12vw;
-    }
-
-    #site-home #articles-list p {
-        font-size: 1rem;
-        margin-top: 0.5rem !important;
-    }
-}
-
-#site-home #first-edition-subtitle {
-    text-align: center;
-    place-self: center;
-    margin-bottom: 0em;
-}
-
-#site-home #divider {
-    content: '';
-    display: block;
-    width: 20%;
-    height: 1px;
-    background-color: var(--color-secondary);
-    margin: auto;
-    margin-top: var(--cover-padding-increment) !important;
-}
-
-#site-home #cover {
-    width: 100vw !important;
-    align-self: center;
-}
-
-
-
-#site-home #articles-list {
-    font-family: "Times New Roman", serif;
-    font-size: 1.5rem;
-    margin-top: 2em;
-    text-align: center;
-    line-height: 2;
-}
-
-#site-home #articles-list a {
     margin: 0;
-    cursor: pointer;
-    transition: 0.5s;
-    color: black;
-    text-decoration: none;
+    line-height: 0.9;
 }
 
-#site-home #articles-list a:hover {
-    padding-left: 1em;
+#site-home h2 {
+    font-size: 3em;
+    text-align: center;
+    /* font-weight: 300; */
+    margin: 0;
+    margin-bottom: 1.25rem;
+    margin-top: -0.75rem;
 }
 
 #site-home #read-button {
     margin-top: 2em;
-    /* margin-bottom: -4em; */
     text-align: center;
-    /* animation: identifier 0.5s forwards; */
-    /* transform: translateY(200px); */
     animation-delay: 2s;
     z-index: 1;
     display: flex;
@@ -164,11 +56,67 @@ html {
     text-decoration: none;
 }
 
-@keyframes identifier {
-    from {
-        transform: translateY(200px);
+@media  screen and (max-width: 1400px) {
+    #site-home h1 {
+        font-size: 14em;
     }
-    to {
-        transform: translateY(0);
+}
+
+@media screen and (max-width: 1250px) {
+    #site-home h1 {
+        font-size: 12em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #site-home {
+        padding: 1rem;
+    }
+
+    #site-home h1 {
+        font-size: 10em;
+        padding: 0 1rem;
+    }
+
+    #site-home #read-button {
+        margin-top: 1em;
+    }
+
+    #site-home #read-button h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #site-home h1 {
+        font-size: 8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #site-home h1 {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #site-home h1 {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #site-home h1 {
+        font-size: 4em;
+    }
+
+    #site-home #read-button h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #site-home h1 {
+        font-size: 3em;
     }
 }
